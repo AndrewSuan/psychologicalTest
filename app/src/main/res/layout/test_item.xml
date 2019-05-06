@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp">
+    <ImageView
+        android:id="@+id/test_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/otherimg1"
+        android:maxHeight="70dp"
+        android:adjustViewBounds="true"/>
+    <TextView
+        android:id="@+id/test_title"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/test_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test_title1"
+        android:layout_toLeftOf="@id/test_gobt"
+        android:layout_marginRight="30dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#000"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/test_introduction"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/test_img"
+        android:layout_toLeftOf="@id/test_gobt"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/test_title"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test_introduction1"
+        android:textColor="#999999"
+        android:lineSpacingExtra="6dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="12sp"/>
+    <ImageView
+        android:id="@+id/test_gobt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/gobt"
+        android:maxWidth="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+
+
+
+
+
+</RelativeLayout>

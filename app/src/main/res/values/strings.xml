@@ -1,10 +1,21 @@
 <resources>
     <string name="app_name">psychologicalTest</string>
     <string name="Home_title">恋爱中你是哪部剧的女主角？如果标题很长就换行</string>
-    <string name="Home_introduction">人们容易在恋爱时表露出自己深藏起来的人格，而这种人格往往安置这内心的真实需求。</string>
+    <string name="Home_introduction">人们容易在恋爱时表露出自己深藏起来的人格，而这种人格往往暗示着内心的真实需求。在恋爱中，你会扮演着什么样的角色？测测看吧！</string>
     <string name="Home_otherTitle">大家都在测</string>
     <string name="test_title1">测测你是不是世界杯的忠实粉丝</string>
     <string name="test_introduction1">这几天，你也深夜不睡，炯炯有神地看球赛了么？那么你是真球迷还是伪球迷呢？让这个趣味测试告诉你吧！</string>
     <string name="test_title2">心理极限测试： 你的承受力有多高？</string>
     <string name="test_introduction2">每个人都有着不一样的心理承受能力，你的承受极限又到了那一个等级了呢？立刻开始测试吧。</string>
+    <string name="detail_title">恋爱中你是哪部剧的女主角？如果标题很长就换行</string>
+    <string name="detail_introduction">人们容易在恋爱时表露出自己深藏起来的人格，而这种人格往往暗示着内心的真实需求。在恋爱中，你会扮演着什么样的角色？测测看吧！</string>
+    <string name="startTest_bt">开始测试</string>
+    <string name="radio_title">当他/她在家里打游戏的时候，这时你会：</string>
+    <string name="radio_a">觉得他/她根本不在乎你</string>
+    <string name="radio_b">觉得他/她就是一个小孩子，总喜欢玩游戏(延长用作测试)</string>
+    <string name="radio_c">在他/她身边做自己的事</string>
+    <string name="radio_d">建议他/她带上自己一起玩</string>
+    <string name="radio_e">让他/她不管怎样都不该对你板着脸</string>
+    <string name="git">提交</string>
+
 </resources>

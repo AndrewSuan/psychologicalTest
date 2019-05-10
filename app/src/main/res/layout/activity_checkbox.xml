@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RadioActivity"
+    tools:context=".CheckboxActivity"
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
@@ -43,7 +43,7 @@
         android:layout_marginLeft="25dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3/24"
+        android:text="3/24(多选)"
         android:textSize="17sp"
         android:textColor="#999999"/>
 
@@ -57,7 +57,7 @@
         android:textSize="17sp"
         android:textColor="#f96645"/>
 
-    <RadioGroup
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
@@ -65,9 +65,9 @@
         android:layout_marginRight="25dp"
         android:orientation="vertical">
 
-        <RadioButton
-            android:onClick="onRadioButtonClicked"
-            android:id="@+id/radio_a"
+        <CheckBox
+            android:onClick="onCheckboxClicked"
+            android:id="@+id/checkbox_a"
             style="@style/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -79,9 +79,9 @@
             android:layout_height="1dp"
             android:background="#ececec"
             android:layout_alignParentBottom="true"/>
-        <RadioButton
-            android:onClick="onRadioButtonClicked"
-            android:id="@+id/radio_b"
+        <CheckBox
+            android:onClick="onCheckboxClicked"
+            android:id="@+id/checkbox_b"
             style="@style/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -94,9 +94,9 @@
             android:background="#ececec"
             android:layout_alignParentBottom="true"/>
 
-        <RadioButton
-            android:onClick="onRadioButtonClicked"
-            android:id="@+id/radio_c"
+        <CheckBox
+            android:onClick="onCheckboxClicked"
+            android:id="@+id/checkbox_c"
             style="@style/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -109,9 +109,9 @@
             android:background="#ececec"
             android:layout_alignParentBottom="true"/>
 
-        <RadioButton
-            android:onClick="onRadioButtonClicked"
-            android:id="@+id/radio_d"
+        <CheckBox
+            android:onClick="onCheckboxClicked"
+            android:id="@+id/checkbox_d"
             style="@style/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -124,9 +124,9 @@
             android:background="#ececec"
             android:layout_alignParentBottom="true"/>
 
-        <RadioButton
-            android:onClick="onRadioButtonClicked"
-            android:id="@+id/radio_e"
+        <CheckBox
+            android:onClick="onCheckboxClicked"
+            android:id="@+id/checkbox_e"
             style="@style/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -138,7 +138,8 @@
             android:layout_height="1dp"
             android:background="#ececec"
             android:layout_alignParentBottom="true"/>
-    </RadioGroup>
+    </LinearLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -155,7 +156,7 @@
             android:maxHeight="30dp"/>
 
         <ImageView
-            android:onClick="enterNext"
+            android:onClick="enterRadioImg"
             android:layout_alignParentRight="true"
             android:layout_marginRight="25dp"
             android:layout_alignParentTop="true"

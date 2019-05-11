@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">psychologicalTest</string>
+    <string name="app_name">心理测试</string>
     <string name="Home_title">恋爱中你是哪部剧的女主角？如果标题很长就换行</string>
     <string name="Home_introduction">人们容易在恋爱时表露出自己深藏起来的人格，而这种人格往往暗示着内心的真实需求。在恋爱中，你会扮演着什么样的角色？测测看吧！</string>
     <string name="Home_otherTitle">大家都在测</string>

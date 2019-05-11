@@ -1,9 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShareActivity">
+    tools:context=".ShareActivity"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStart="0dp"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:maxLines="1"
+        android:maxEms="3"
+        android:ellipsize="end"
+        android:text="@string/app_name"
+        android:textColor="#000"
+        android:textSize="20sp"/>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ececec"
+        />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/home_title"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="10dp"
+            android:text="@string/Home_title"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="22sp"/>
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp">
+            <ImageView
+                android:id="@+id/home_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/photo"
+                android:adjustViewBounds="true"
+                android:maxWidth="640dp"
+                android:maxHeight="360dp"
+                />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/home_introduction"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Home_introduction"
+            android:lineSpacingExtra="13dp"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/qrcode"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/qrcode"/>
+    <TextView
+        android:layout_toRightOf="@id/qrcode"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:lineSpacingExtra="10dp"
+        android:text="长按识别二维码\n测测恋爱中的你是哪部韩剧中的女主角"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+        <!--标题、图片、简介-->
+
+
+
+</LinearLayout>
